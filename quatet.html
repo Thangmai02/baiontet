@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let x=+prompt(" nhập tọa độ x")
+    let y=+prompt(" nhập tọa độ y")
+    function deCac() {
+
+        if (x==0 && y==0){
+            alert("Điểm nằm ở gốc tọa độ (0,0)")
+        }else if (x==0){
+            alert(' Điểm nằm trên trục Y')
+        }else if (y==0){
+            alert(' Điểm nằm trên trục X')
+        }else if(x>0&&y>0){
+            alert('Điểm nằm ở góc phần tư thứ nhất')
+        }else if (x<0&&y>0){
+            alert('Điểm nằm ở góc phần tư thứ hai')
+        }else if (x<0 && y<0){
+            alert(' Điểm nằm ở góc phần tư thứ ba')
+        }else if(x>0&&y<0){
+            alert(' Điểm nằm ở góc phần tư thứ tư')
+        }
+
+    }
+    deCac();
+
+</script>
+</body>
+</html>

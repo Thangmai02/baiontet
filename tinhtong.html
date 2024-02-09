@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let a=+prompt(" nhập số a")
+    let b=+prompt(" nhập số b")
+    function tinhtong() {
+        let tong=0
+        for(let i=a;i<=b;i++){
+            if(i%13 !=0){
+                tong+=i
+            }
+        }
+        return tong;
+
+    }
+    let kq=tinhtong()
+    document.write(" tổng các số không chia hết cho 13 là : "+kq)
+</script>
+
+</body>
+</html>
